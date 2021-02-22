@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block title %} 登录 {% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/login.css')}}">
+{% endblock %}
+<div class="main">
+    {% block main %}
+    <h3 class="page-title">添加商品信息</h3>
+    <from action="" method="POST">
+        <form method="post">
+            {{ form.csrf_token }}
+            <div class="form-container">
+                {{ form.id.label }}
+                <p>{{form.id}}</p>
+                {% for msg in form.id.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.name.label }}
+                <p>{{form.name}}</p>
+                {% for msg in form.name.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.prv_time.label }}
+                <p>{{form.prv_time}}</p>
+                {% for msg in form.prv_time.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.title.label }}
+                <p>{{form.title}}</p>
+                {% for msg in form.title.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.type.label }}
+                <p>{{form.type}}</p>
+                {% for msg in form.type.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.pro_time.label }}
+                <p>{{form.pro_time}}</p>
+                {% for msg in form.pro_time.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.guarantee_time.label }}
+                <p>{{form.guarantee_time }}</p>
+                {% for msg in form.guarantee_time .errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.num.label }}
+                <p>{{form.num}}</p>
+                {% for msg in form.num.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.price.label }}
+                <p>{{form.price}}</p>
+                {% for msg in form.price.errors %}
+                <p>{{msg}}</p>
+                {% endfor %}
+
+                {{ form.submit }}
+            </div>
+        </form>
+        <hr/>
+    </from>
+    {% endblock %}
+</div>
+
+

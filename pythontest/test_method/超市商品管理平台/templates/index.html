@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} 首页 {% endblock %}
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/login.css')}}">
+{% endblock %}
+{% block main %}
+<form>
+    <h>
+        {{list}}
+    </h>
+</form>
+    <h4 class="h4"><strong>你好{{username}}</strong></h4>
+<h3 style="color green" class="menu">
+    <li><a href="{{url_for('check')}}">临期商品</a></li>
+    <li><a href="{{url_for('add')}}">添加商品信息</a></li>
+    <li><a href="{{url_for('user_info')}}">查看用户信息</a></li>
+</h3>
+{% endblock %}

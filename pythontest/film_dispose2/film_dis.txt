@@ -1,0 +1,5 @@
+[2020-12-26 14:32:44] INFO [ts_change_to_mp4: main.py, 31] D:\desktop\r1\1当前文件夹中不存在 m3u8
+[2020-12-26 14:32:44] INFO [ts_change_to_mp4: main.py, 31] D:\desktop\r1\2当前文件夹中不存在 m3u8
+[2020-12-26 14:32:44] INFO [ts_change_to_mp4: main.py, 31] D:\desktop\r1\3当前文件夹中不存在 m3u8
+[2020-12-26 14:32:44] INFO [ts_change_to_mp4: main.py, 31] D:\desktop\r1\4当前文件夹中不存在 m3u8
+[2020-12-26 14:32:44] INFO [ts_change_to_mp4: main.py, 31] D:\desktop\r1\5当前文件夹中不存在 m3u8

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} 登录 {% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+<div class="main">
+    {% block main %}
+        <h3 class="page-title" align="center">超市商品信息表</h3>
+    <form>
+		<table border="1" cellpadding="5" cellspacing="0" width="100%" bgcolor="F2F2F2">
+			<tr id="tabRow">
+				<td colspan="3">
+					<strong><span class="title">超市商品信息表</strong>
+				</td>
+                <td></td>
+                <td></td>
+                <td></td>
+			</tr>
+            {% for provider in providers %}
+			<tr id="tabRow">
+				<td width="15%"><strong>供货商:  {{provider.provider}}</strong></td>
+                <td width="25%"><strong>供货时间:  {{provider.provide_time}}</strong></td>
+                <td></td>
+                <td></td>
+			</tr>
+            {% for good in provider.goods %}
+            <tr id="tabRow">
+                <td width="10%"><strong>名称: {{good.title}}</strong></td>
+                <td width="5%"><strong>类型: {{good.type}}</strong></td>
+                <td width="15%"><strong>生产日期: {{good.produce_date}}</strong></td>
+                <td width="15%"><strong>保质期: {{good.guarantee_time}}</strong></td>
+                <td width="15%"><strong>价格: {{good.price}}</strong></td>
+                <td width="20%"><strong>数量: {{good.num}}</strong></td>
+            </tr>
+            {% endfor %}
+            {% endfor %}
+		</table>
+	</form>
+    {% endblock %}
+</div>
