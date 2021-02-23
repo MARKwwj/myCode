@@ -1,0 +1,144 @@
+[2021-02-22 19:29:21] INFO [_log: _internal.py, 113]  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+[2021-02-22 19:30:24] ERROR [log_exception: app.py, 1891] Exception on /videos [POST]
+Traceback (most recent call last):
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\workspace\python\longvideo_mysql\app.py", line 17, in videos
+    if result["only_query"]:
+KeyError: 'only_query'
+[2021-02-22 19:30:24] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:30:24] "[35m[1mPOST /videos HTTP/1.1[0m" 500 -
+[2021-02-22 19:39:08] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:39:08] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-22 19:39:16] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:39:16] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-22 19:41:42] INFO [_log: _internal.py, 113]  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+[2021-02-22 19:41:51] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:41:51] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-22 19:41:54] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:41:54] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-22 19:45:04] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:45:04] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-22 19:45:14] ERROR [log_exception: app.py, 1891] Exception on /videoAlter [POST]
+Traceback (most recent call last):
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\workspace\python\longvideo_mysql\app.py", line 76, in videoAlter
+    if result["video_id"] == "":
+KeyError: 'video_id'
+[2021-02-22 19:45:14] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:45:14] "[35m[1mPOST /videoAlter HTTP/1.1[0m" 500 -
+[2021-02-22 19:46:11] ERROR [log_exception: app.py, 1891] Exception on /videos [POST]
+Traceback (most recent call last):
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\workspace\python\longvideo_mysql\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\workspace\python\longvideo_mysql\app.py", line 16, in videos
+    info.video_title = result["video_title"]
+KeyError: 'video_title'
+[2021-02-22 19:46:11] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:46:11] "[35m[1mPOST /videos HTTP/1.1[0m" 500 -
+[2021-02-22 19:46:17] INFO [run: film_disp_func.py, 315]  ”∆µ¥¶¿Ìø™ º£°£°£°
+[2021-02-22 19:46:17] INFO [run: film_disp_func.py, 318] µ±«∞µÁ”∞µƒ¬∑æ∂:D:\desktop\r1/19473
+[2021-02-22 19:46:17] INFO [run: film_disp_func.py, 328] ’˝‘⁄Ωÿ»°∑‚√ÊÕº£°
+[2021-02-22 19:46:20] INFO [run: film_disp_func.py, 330] ∑‚√ÊÕºΩÿ»°Ω· ¯£°
+[2021-02-22 19:46:20] INFO [run: film_disp_func.py, 334] ø™ ºº”√‹£°
+[2021-02-22 19:46:23] INFO [run: film_disp_func.py, 337] º”√‹≥…π¶
+[2021-02-22 19:46:23] INFO [run: film_disp_func.py, 338] º”√‹Ω· ¯£°
+[2021-02-22 19:46:23] INFO [run: film_disp_func.py, 340] µ±«∞ ”∆µ¥¶¿ÌÕÍ≥…£°£°£°
+[2021-02-22 19:46:23] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:46:23] "[37mPOST /videoAlter HTTP/1.1[0m" 200 -
+[2021-02-22 19:46:38] INFO [run: film_disp_func.py, 315]  ”∆µ¥¶¿Ìø™ º£°£°£°
+[2021-02-22 19:46:38] INFO [run: film_disp_func.py, 318] µ±«∞µÁ”∞µƒ¬∑æ∂:D:\desktop\r1/19474
+[2021-02-22 19:46:38] INFO [run: film_disp_func.py, 328] ’˝‘⁄Ωÿ»°∑‚√ÊÕº£°
+[2021-02-22 19:46:39] INFO [run: film_disp_func.py, 330] ∑‚√ÊÕºΩÿ»°Ω· ¯£°
+[2021-02-22 19:46:39] INFO [run: film_disp_func.py, 334] ø™ ºº”√‹£°
+[2021-02-22 19:46:43] INFO [run: film_disp_func.py, 337] º”√‹≥…π¶
+[2021-02-22 19:46:43] INFO [run: film_disp_func.py, 338] º”√‹Ω· ¯£°
+[2021-02-22 19:46:43] INFO [run: film_disp_func.py, 340] µ±«∞ ”∆µ¥¶¿ÌÕÍ≥…£°£°£°
+[2021-02-22 19:46:43] INFO [_log: _internal.py, 113] 127.0.0.1 - - [22/Feb/2021 19:46:43] "[37mPOST /videoAlter HTTP/1.1[0m" 200 -
+[2021-02-22 20:55:49] INFO [_log: _internal.py, 113]  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+[2021-02-22 20:55:54] INFO [run: film_disp_func.py, 315]  ”∆µ¥¶¿Ìø™ º£°£°£°
+[2021-02-22 20:55:54] INFO [run: film_disp_func.py, 318] µ±«∞µÁ”∞µƒ¬∑æ∂:D:\desktop\r1/19473
+[2021-02-22 20:55:54] INFO [run: film_disp_func.py, 326] coversŒƒº˛º–“—¥Ê‘⁄! Ã¯π˝Ωÿ»°∑‚√ÊÕº£°
+[2021-02-22 20:55:54] INFO [run: film_disp_func.py, 334] ø™ ºº”√‹£°
+[2021-02-22 20:55:58] INFO [run: film_disp_func.py, 337] º”√‹≥…π¶
+[2021-02-22 20:55:58] INFO [run: film_disp_func.py, 338] º”√‹Ω· ¯£°
+[2021-02-22 20:55:58] INFO [run: film_disp_func.py, 340] µ±«∞ ”∆µ¥¶¿ÌÕÍ≥…£°£°£°
+[2021-02-23 10:50:58] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 10:50:58] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-23 14:31:08] INFO [_log: _internal.py, 113]  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+[2021-02-23 14:31:38] INFO [_log: _internal.py, 113]  * Running on http://0.0.0.0:8000/ (Press CTRL+C to quit)
+[2021-02-23 14:31:56] INFO [run: film_disp_func.py, 315]  ”∆µ¥¶¿Ìø™ º£°£°£°
+[2021-02-23 14:31:56] INFO [run: film_disp_func.py, 318] µ±«∞µÁ”∞µƒ¬∑æ∂:D:\desktop\r1/19474
+[2021-02-23 14:31:56] INFO [run: film_disp_func.py, 326] coversŒƒº˛º–“—¥Ê‘⁄! Ã¯π˝Ωÿ»°∑‚√ÊÕº£°
+[2021-02-23 14:31:56] INFO [run: film_disp_func.py, 334] ø™ ºº”√‹£°
+[2021-02-23 14:32:01] INFO [run: film_disp_func.py, 337] º”√‹≥…π¶
+[2021-02-23 14:32:01] INFO [run: film_disp_func.py, 338] º”√‹Ω· ¯£°
+[2021-02-23 14:32:01] INFO [run: film_disp_func.py, 340] µ±«∞ ”∆µ¥¶¿ÌÕÍ≥…£°£°£°
+[2021-02-23 14:32:01] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:32:01] "[37mPOST /videoAlter HTTP/1.1[0m" 200 -
+[2021-02-23 14:32:09] INFO [run: film_disp_func.py, 315]  ”∆µ¥¶¿Ìø™ º£°£°£°
+[2021-02-23 14:32:09] INFO [run: film_disp_func.py, 318] µ±«∞µÁ”∞µƒ¬∑æ∂:D:\desktop\r1/19473
+[2021-02-23 14:32:09] INFO [run: film_disp_func.py, 326] coversŒƒº˛º–“—¥Ê‘⁄! Ã¯π˝Ωÿ»°∑‚√ÊÕº£°
+[2021-02-23 14:32:09] INFO [run: film_disp_func.py, 334] ø™ ºº”√‹£°
+[2021-02-23 14:32:12] INFO [run: film_disp_func.py, 337] º”√‹≥…π¶
+[2021-02-23 14:32:12] INFO [run: film_disp_func.py, 338] º”√‹Ω· ¯£°
+[2021-02-23 14:32:12] INFO [run: film_disp_func.py, 340] µ±«∞ ”∆µ¥¶¿ÌÕÍ≥…£°£°£°
+[2021-02-23 14:32:12] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:32:12] "[37mPOST /videoAlter HTTP/1.1[0m" 200 -
+[2021-02-23 14:43:34] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:43:34] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-23 14:43:40] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:43:40] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-23 14:43:41] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:43:41] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-23 14:43:41] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:43:41] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-23 14:44:25] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:44:25] "[37mPOST /videos HTTP/1.1[0m" 200 -
+[2021-02-23 14:45:10] INFO [run: film_disp_func.py, 315]  ”∆µ¥¶¿Ìø™ º£°£°£°
+[2021-02-23 14:45:10] INFO [run: film_disp_func.py, 318] µ±«∞µÁ”∞µƒ¬∑æ∂:D:\desktop\r1/19473
+[2021-02-23 14:45:10] INFO [run: film_disp_func.py, 326] coversŒƒº˛º–“—¥Ê‘⁄! Ã¯π˝Ωÿ»°∑‚√ÊÕº£°
+[2021-02-23 14:45:10] INFO [run: film_disp_func.py, 334] ø™ ºº”√‹£°
+[2021-02-23 14:45:13] INFO [run: film_disp_func.py, 337] º”√‹≥…π¶
+[2021-02-23 14:45:13] INFO [run: film_disp_func.py, 338] º”√‹Ω· ¯£°
+[2021-02-23 14:45:13] INFO [run: film_disp_func.py, 340] µ±«∞ ”∆µ¥¶¿ÌÕÍ≥…£°£°£°
+[2021-02-23 14:45:13] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:45:13] "[37mPOST /videoAlter HTTP/1.1[0m" 200 -
+[2021-02-23 14:45:18] INFO [run: film_disp_func.py, 315]  ”∆µ¥¶¿Ìø™ º£°£°£°
+[2021-02-23 14:45:18] INFO [run: film_disp_func.py, 318] µ±«∞µÁ”∞µƒ¬∑æ∂:D:\desktop\r1/19473
+[2021-02-23 14:45:18] INFO [run: film_disp_func.py, 328] ’˝‘⁄Ωÿ»°∑‚√ÊÕº£°
+[2021-02-23 14:45:18] ERROR [log_exception: app.py, 1891] Exception on /videoAlter [POST]
+Traceback (most recent call last):
+  File "D:\python38\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\python38\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\python38\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\python38\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "D:\python38\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\python38\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\workspace\python\longvideo_mysql\app.py", line 85, in videoAlter
+    run(info.cur_video_path, info.res_video_path, video_id)
+  File "E:\workspace\python\longvideo_mysql\film_disp_func.py", line 329, in run
+    cut_film_cover(video_dir)
+  File "E:\workspace\python\longvideo_mysql\film_disp_func.py", line 168, in cut_film_cover
+    os.mkdir(film_dir + '/covers')
+FileNotFoundError: [WinError 3] œµÕ≥’“≤ªµΩ÷∏∂®µƒ¬∑æ∂°£: 'D:\\desktop\\r1/19473/covers'
+[2021-02-23 14:45:18] INFO [_log: _internal.py, 113] 127.0.0.1 - - [23/Feb/2021 14:45:18] "[35m[1mPOST /videoAlter HTTP/1.1[0m" 500 -
